@@ -117,7 +117,7 @@ def createChromeManifest(varList):
     firstSegment = varList.extId[0:ind]
     fd=open('chrome.manifest','w')
     fd.write('content	' + firstSegment +"	/content\n")
-    fd.write('overlay chrome://messanger/content/messanger.xul ')
+    fd.write('overlay chrome://messenger/content/messenger.xul ')
     fd.write('chrome://' + firstSegment + '/content/' + varList.xulName + ".xul\n")
     fd.close()
 
