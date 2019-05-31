@@ -72,7 +72,7 @@ def createRDF(varList):
     doc=xmlDom.createDocument(rdfNS,"RDF",None)
     elem=doc.documentElement;
     elem.setAttribute('xmlns',rdfNS)
-    elem.setAttributeNS(emNS,'xmlns:em',rdfNS)
+    elem.setAttributeNS(rdfNS,'xmlns:em',emNS)
     desc=doc.createElement('Description')
     desc.setAttribute('about',"urn:mozilla:install-manifest")
     elem.appendChild(desc)
